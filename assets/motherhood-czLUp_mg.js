@@ -1,1 +1,0 @@
-import{n as e,t}from"./index-vlSJV49m.js";var n=t();function r(){return(0,n.jsx)(`div`,{className:`page`,children:(0,n.jsxs)(e,{to:`/motherhood-follow-up`,children:[` `,(0,n.jsx)(`div`,{className:`words-title`,children:`MOTHERHOOD`})]})})}export{r as default};
