@@ -1,1 +1,0 @@
-import{a as e,i as t,t as n}from"./index-B57j8pF5.js";var r=e(t(),1),i=n();function a({children:e,delay:t}){let[n,a]=(0,r.useState)(!1);return(0,r.useEffect)(()=>{let e=setTimeout(()=>{a(!0)},t);return()=>clearTimeout(e)},[t]),(0,i.jsx)(`p`,{className:n?`show`:`hide`,children:e})}export{a as t};

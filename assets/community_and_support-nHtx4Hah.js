@@ -1,1 +1,0 @@
-import{n as e,t}from"./index-B57j8pF5.js";var n=t();function r(){return(0,n.jsx)(`div`,{className:`page`,children:(0,n.jsxs)(e,{to:`/community-and-support-follow-up`,children:[` `,(0,n.jsx)(`div`,{className:`words-title`,children:`COMMUNITY AND SUPPORT`})]})})}export{r as default};
