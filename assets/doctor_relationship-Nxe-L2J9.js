@@ -1,1 +1,0 @@
-import{n as e,t}from"./index-BiO_hnP3.js";var n=t();function r(){return(0,n.jsx)(`div`,{className:`page`,children:(0,n.jsxs)(e,{to:`/doctor-relationship-follow-up`,children:[` `,(0,n.jsx)(`div`,{className:`words-title`,children:`DOCTOR'S RELATIONSHIP`})]})})}export{r as default};

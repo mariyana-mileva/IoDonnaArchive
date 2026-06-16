@@ -1,0 +1,1 @@
+import{n as e,t}from"./index-vlSJV49m.js";var n=t();function r(){return(0,n.jsx)(`div`,{className:`page`,children:(0,n.jsx)(e,{to:`/inequality_equality_misoginy_follow_up`,children:(0,n.jsx)(`div`,{className:`words-title`,children:`INEQUALITY EQUALITY AND MISOGINY`})})})}export{r as default};
