@@ -1,0 +1,36 @@
+.quote {
+  position: absolute;
+  bottom: 70px;
+  left: 70%;
+  transform: translateX(-50%);
+  width: 580px;
+  color: aliceblue;
+  text-align: center;
+  text-decoration: underline 0.5px;
+  cursor: pointer;
+  font-size: 1.4em;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.quote:hover {
+  transform: translateX(-50%) scale(1.03);
+}
+
+.author {
+  position: absolute;
+  bottom: 20px;
+  left: 75%;
+  transform: translateX(-50%);
+  color: aliceblue;
+  width: 540px;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 1.5s ease;
+}

@@ -1,0 +1,40 @@
+.archive-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 50px 25px;
+  overflow-y: scroll;
+}
+
+.archive-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.archive-title {
+  text-align: center;
+  font-family: "Special Elite", system-ui;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  color: black;
+}
+
+.archive-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.column {
+  font-family: "Special Elite", system-ui;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: justify;
+  color: black;
+}
+
+.column p {
+  margin-bottom: 30px;
+}

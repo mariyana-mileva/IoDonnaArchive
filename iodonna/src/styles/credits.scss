@@ -1,0 +1,79 @@
+.resources-page {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+
+  padding: 80px 60px;
+
+  box-sizing: border-box;
+
+  font-family: "Roboto Mono", monospace;
+}
+
+.resources-grid {
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 80px;
+}
+
+.resource-column {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.resource-column h2 {
+  font-size: 2rem;
+
+  font-weight: 400;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 40px;
+
+  text-align: center;
+}
+
+.resource-links {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+
+  width: 100%;
+}
+
+.resource-link {
+  color: white;
+
+  text-decoration: none;
+
+  text-align: center;
+
+  white-space: pre-line;
+
+  font-size: 0.75rem;
+
+  line-height: 1.6;
+
+  letter-spacing: 1px;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.resource-link:hover {
+  opacity: 0.6;
+
+  transform: translateY(-2px);
+}

@@ -1,0 +1,193 @@
+import "../../styles/index.scss";
+import "../../styles/women_styles.scss";
+
+import rina from "../../assets/rina/rina.png";
+import rinaOG from "../../assets/rina/rinaOG.png";
+import mapButton from "../../assets/map-button.png";
+import poemButton from "../../assets/poem-button.png";
+
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
+function Rina() {
+  const [isHovered, setIsHovered] = useState(false);
+  const [activeArea, setActiveArea] = useState(null);
+
+  const areas = [
+    {
+      id: 1,
+      text: `"...in 1972 [...] My son was in daycare, and this had been an opportunity to do something I actually liked, which was working for the union.”`,
+      style: {
+        top: "16%",
+        left: "42%",
+        width: "2%",
+        height: "2%",
+      },
+      textStyle: {
+        left: "30px",
+      },
+    },
+    {
+      id: 2,
+      text: `"...The head of organizing at the time, Bepi Mainardi, told me: 'Come back in September and we'll see what we can do, because we'd like to put you to work.' And in September 1972, he told me, 'Look, we're taking you on.' I wanted to work part-time because I had to go pick up my son from daycare, and that's exactly what happened.
+Then, at the beginning of June 1973, I was asked if I would be available for the Quinta Lega at Mirafiori. I said yes, and I used my salary to pay for a babysitter to go pick up my son from daycare.” `,
+      style: {
+        top: "22%",
+        left: "53%",
+        width: "2%",
+        height: "2%",
+      },
+      textStyle: {
+        left: "30px",
+      },
+    },
+    {
+      id: 3,
+      text: `“Both Marisa and I had to make the flyers the moment a delegate came out of Fiat saying, 'I have a strike in workshop number such-and-such; I need them by such-and-such time.' This meant working until very late in the evening, which actually became a problem for me with my child, especially after I separated from my husband. Sometimes we had to prepare three or four stencils of the same flyer so that the comrades would have a backup if the stencil tore on the mimeograph machine. We ran off a lot of copies for each flyer. I remember that for the Mechanics division there were 5,000; for the Body Shop there were even more, plus all the others."`,
+      style: {
+        top: "45%",
+        left: "62%",
+        width: "2%",
+        height: "2%",
+      },
+      textStyle: {
+        width: "500px",
+        left: "30px",
+      },
+    },
+    {
+      id: 4,
+      text: `“I began to realise that ultimately, the ones who had to step up and demand to be respected were precisely the women. Men, even if they were complete idiots—and we certainly knew a few—didn't have this problem. This growing awareness pushed me to make sense of the unease we felt every day at work, because the contradiction was that you were working for a cause you believed in, yet at the same time, you felt that your male comrades didn't treat your work on the technical staff with the respect it deserved. This helped me and the other women come together. Slowly, by talking things out, we realised that the problem each of us experienced as a personal struggle was actually a shared problem for all of us.”`,
+      style: {
+        top: "70%",
+        left: "60%",
+        width: "2%",
+        height: "2%",
+      },
+      textStyle: {
+        left: "30px",
+      },
+    },
+    {
+      id: 5,
+      text: `“It had already made me reflect even then, though I had never said anything to anyone, that what we did was a job, but at the same time it was also a political commitment; it was activism. That is why thinking about having rights as a worker within the union structure made me feel guilty."
+`,
+      style: {
+        top: "80%",
+        left: "52%",
+        width: "2%",
+        height: "2%",
+      },
+      textStyle: {
+        width: "500px",
+        left: "30px",
+      },
+    },
+    {
+      id: 6,
+      text: `“The 1977 Fiom-Cgil Congress, where we presented our speech as 'female comrades of the technical staff,' took place in the main hall of the Circolo Aurora in Collegno. Maria Vincenti read the address. It was a deeply moving experience: for the first time, I was participating in a union congress not as the 'support staff'—that is, just to pass notes to the speakers or let them know about phone calls—but finally as a 'part' of the Congress.”`,
+      style: {
+        top: "80%",
+        left: "30%",
+        width: "2%",
+        height: "2%",
+      },
+      textStyle: {
+        width: "400px",
+        left: "30px",
+      },
+    },
+    {
+      id: 7,
+      text: ` “Then at the Quinta Lega, when the female delegates from the Women's Inter-union Committee started arriving—and they certainly made a lot of noise—you would sometimes see the male comrades cop attitudes and snub these meetings. And that seemed wrong to me, because I have always believed that there must be room for everyone within the union. So, if these were female comrades who needed to discuss their issues, it was important that, just like everyone else, they could gather in the union spaces.
+At first, I saw it simply as an issue of fairness. Gradually, I also realised that not only was there a more or less underlying resistance to giving them space (and they were women), but absolutely no consideration was given to the work we were doing ourselves (and coincidentally, we were women too).”`,
+      style: {
+        top: "60%",
+        left: "45%",
+        width: "2%",
+        height: "2%",
+      },
+      textStyle: {
+        width: "400px",
+        left: "30px",
+      },
+    },
+    {
+      id: 8,
+      text: `“In 1966, I joined the Fgci. It felt like joining a community that wanted to create a better world, and that made me feel good, truly at peace with myself. I got married in 1967. I got pregnant in 1967, and my son was born in January 1968. In November 1967, the PCI Workers' Conference was in the works, and I had typed up (as volunteer work) the interviews with the Amiat workers.”`,
+      style: {
+        top: "34%",
+        left: "30%",
+        width: "2%",
+        height: "2%",
+      },
+      textStyle: {
+        left: "-340px",
+      },
+    },
+  ];
+
+  return (
+    <div className="women-page">
+      <div className="page-image domenica">
+        <div className="image-wrapper">
+          <img
+            src={rina}
+            alt=""
+            className={`woman-image ${isHovered ? "fade-out" : ""}`}
+          />
+
+          <img
+            src={rinaOG}
+            alt=""
+            className={`woman-image overlay ${isHovered ? "fade-in" : ""}`}
+          />
+        </div>
+        {areas.map((area) => (
+          <div
+            key={area.id}
+            className="hover-area"
+            style={{
+              ...area.style,
+              opacity: isHovered ? 0 : 1,
+              pointerEvents: isHovered ? "none" : "auto",
+            }}
+            onMouseEnter={() => setActiveArea(area.id)}
+            onMouseLeave={() => setActiveArea(null)}
+          >
+            {activeArea === area.id && !isHovered && (
+              <div className="hover-text" style={area.textStyle}>
+                {area.text}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+      <div
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        className="woman-name"
+      >
+        Rina D'Incà
+      </div>
+      <Link to="/rememberRina">
+        {" "}
+        <div className="quote">I remember</div>
+      </Link>
+      <div className="map-button">
+        <Link to="/map">
+          {" "}
+          <img src={mapButton} alt="" />
+        </Link>
+      </div>
+      <div className="poem-button">
+        <Link to="/poem">
+          {" "}
+          <img src={poemButton} alt="" />
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+export default Rina;

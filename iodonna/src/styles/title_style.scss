@@ -1,0 +1,14 @@
+.title {
+  font-size: 3em;
+  color: aliceblue !important;
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.title-text {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+.title:hover .title-text {
+  transform: scale(1.03);
+}
