@@ -1,0 +1,1 @@
+var e=`/IoDonnaArchive/assets/tina-BtSVcM-F.png`;export{e as t};

@@ -1,0 +1,1 @@
+var e=`/IoDonnaArchive/assets/rina-CkSQCh1k.png`;export{e as t};

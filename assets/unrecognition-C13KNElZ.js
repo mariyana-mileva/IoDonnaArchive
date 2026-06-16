@@ -1,0 +1,1 @@
+import{n as e,t}from"./index-CKtg_jtF.js";var n=t();function r(){return(0,n.jsx)(`div`,{className:`page`,children:(0,n.jsx)(e,{to:`/unrecognition-follow-up`,children:(0,n.jsx)(`div`,{className:`words-title`,children:`UNRECOGNITION`})})})}export{r as default};

@@ -1,0 +1,1 @@
+var e=`/IoDonnaArchive/assets/domenica-CknCoCSH.png`;export{e as t};

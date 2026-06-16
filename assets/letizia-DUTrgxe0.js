@@ -1,0 +1,1 @@
+var e=`/IoDonnaArchive/assets/letizia-CIH_iB6y.png`;export{e as t};
